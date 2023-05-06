@@ -1,7 +1,6 @@
-using System;
+﻿using System;
 using ServiceStack;
 using SaaS.ServiceModel;
-
 namespace SaaS.ServiceInterface
 {
     public class MyServices : Service

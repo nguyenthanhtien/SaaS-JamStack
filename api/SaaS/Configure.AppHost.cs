@@ -30,7 +30,8 @@ public class AppHost : AppHostBase, IHostingStartup
             "https://localhost:5001",
             "https://" + Environment.GetEnvironmentVariable("DEPLOY_CDN")
         }, allowCredentials:true));
-
+        Plugins.Add(new AdminDatabaseFeature());
+        Plugins.Add(new AdminRedisFeature());
         ConfigurePlugin<UiFeature>(feature => {
             feature.Info.BrandIcon.Uri = "/assets/img/logo.svg";
             feature.Info.BrandIcon.Cls = "inline-block w-8 h-8 mr-2";
