@@ -1,13 +1,7 @@
-﻿using SaaS.ServiceModel.Configuration.Template;
-using SaaS.ServiceModel.Configuration;
-using ServiceStack.DataAnnotations;
+﻿using ServiceStack.DataAnnotations;
 using ServiceStack.Model;
 using ServiceStack;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SaaS.ServiceModel
 {
