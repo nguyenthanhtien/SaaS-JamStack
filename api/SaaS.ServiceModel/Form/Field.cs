@@ -54,6 +54,7 @@ namespace SaaS.ServiceModel.Form
     [AutoApply(Behavior.AuditModify)]
     public class UpdateField : IPatchDb<Field>, IReturn<IdResponse>
     {
+        public Guid Id { get; set; }
         public Guid? FormId { get; set; }
         public string? Name { get; set; }
         public string? Label { get; set; }

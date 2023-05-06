@@ -24,7 +24,7 @@ namespace SaaS.ServiceModel.Form
     [AutoApply(Behavior.AuditQuery)]
     public class QueryForms : QueryDb<Form>
     {
-        public int? Id { get; set; }
+        public string? Name { get; set; }
     }
 
     [Tag("Form"), Description("Create a new Form")]
@@ -42,7 +42,6 @@ namespace SaaS.ServiceModel.Form
     [AutoApply(Behavior.AuditModify)]
     public class UpdateForm : IPatchDb<Form>, IReturn<IdResponse>
     {
-        public Guid Id { get; set; }
         public string? Name { get; set; }
         public int? Index { get; set; }
 

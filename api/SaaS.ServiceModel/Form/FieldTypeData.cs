@@ -48,6 +48,7 @@ namespace SaaS.ServiceModel.FieldTypeData
     [AutoApply(Behavior.AuditModify)]
     public class UpdateFieldTypeData : IPatchDb<FieldTypeData>, IReturn<IdResponse>
     {
+        public Guid Id { get; set; }
         public Guid? FieldId { get; set; }
         public string? Name { get; set; }
         public string? Description { get; set; }

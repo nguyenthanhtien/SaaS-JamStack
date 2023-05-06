@@ -45,6 +45,7 @@ namespace SaaS.ServiceModel.Form.Template
     [AutoApply(Behavior.AuditModify)]
     public class UpdateFormFieldTemplate : IPatchDb<FormFieldTemplate>, IReturn<IdResponse>
     {
+        public Guid Id { get; set; }
         public Guid? FormTemplateId { get; set; }
         public Guid? FieldId { get; set; }
         public string? Value { get; set; }
